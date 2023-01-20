@@ -1,0 +1,380 @@
+ * {
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+:root {
+    --color1: #E6E6E6;
+    --color2: #009688;
+    --color3: #656565;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    padding: 10px 15px;
+    background-color: var(--color1);
+}
+
+/*First Container Styling*/
+
+.container1 {
+    background-color: white;
+    padding-bottom: 25px;
+    box-shadow: 0px 0px 6px var(--color3);
+}
+
+
+.img {
+    width: 100%;
+    position: relative;
+}
+
+.img img {
+    width: 100%;
+    height: 360px;
+}
+
+.img h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: black;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.sec {
+    padding: 0% 4% 0;
+    line-height: 6px;
+}
+
+.sec div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sec p i {
+    color: var(--color2);
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+.sec p {
+    color: var(--color3);
+    font-size: 0.9rem;
+}
+
+hr {
+    height: 1px;
+    color: var(--color3);
+}
+
+.skills {
+    padding: 0% 4%;
+    margin: 0;
+}
+
+.skills div:not(#sk) {
+    display: flex;
+    flex-direction: column;
+}
+
+#sk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#sk h3 {
+    color: var(--color3);
+}
+
+#sk p i {
+    color: var(--color2);
+    margin-right: 15px;
+}
+
+.skills div:not(#sk) p {
+    color: var(--color3);
+    font-size: 0.91rem;
+}
+
+.box {
+    width: 100%;
+    height: 16px;
+    background-color:  var(--color1);
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+
+.box::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '90%';
+    width: 90%;
+    height: 16px;
+    background-color: var(--color2);
+    color: white;
+    border-radius: 40px;
+    font-size: 11px;
+}
+
+div.skills div:nth-child(3) .box::after {
+    width: 80%;
+    content: '80%';
+}
+
+div.skills div:nth-child(4) .box::after {
+    width: 75%;
+    content: '75%';
+}
+
+div.skills div:nth-child(5) .box::after {
+    width: 50%;
+    content: '50%';
+}
+
+.lang {
+    padding: 0% 4%;
+    margin: 0;
+}
+
+.lang div:not(#pla) {
+    display: flex;
+    flex-direction: column;
+}
+
+#pla {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#pla h3 {
+    color: var(--color3);
+}
+
+#pla p i {
+    color: var(--color2);
+    margin-right: 15px;
+}
+
+.lang div:not(#pla) p {
+    color: var(--color3);
+    font-size: 0.91rem;
+}
+
+.box1 {
+    width: 100%;
+    height: 24px;
+    background-color: var(--color1);
+    position: relative;
+    border-radius: 40px;
+}
+
+.box1::after {
+    content: '';
+    width: 100%;
+    height: 24px;
+    background-color: var(--color2);
+    position: absolute;
+    border-radius: 40px;
+}
+
+.lang div:nth-child(3) .box1::after {
+    width:60%;
+}
+
+.lang div:nth-child(4) .box1::after {
+    width:25%;
+}
+
+/* Second container styling */
+
+.container2 {
+    margin-top: 25px;
+    padding: 4% 5%;
+    background-color: white;
+    box-shadow: 0px 0px 6px var(--color3);
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.heading h2 {
+    color: var(--color3);
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.heading h2 i {
+    color: var(--color2);
+    margin-right: 15px;
+}
+
+.section {
+    border-bottom:  1px solid var(--color1);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.section:last-child {
+    border: none;
+}
+
+.section h3 {
+    color: var(--color3);
+}
+
+.section p:first-of-type,.icon{
+    color: var(--color2);
+}
+
+.section p:first-of-type span:last-of-type {
+    background-color: var(--color2);
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.section p:last-of-type {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+/* Second container styling */
+
+.container3 {
+    margin-top: 25px;
+    padding: 4% 5% 2%;
+    background-color: white;
+    box-shadow: 0px 0px 6px var(--color3);
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.head h2 {
+    color: var(--color3);
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.head h2 i {
+    color: var(--color2);
+    margin-right: 15px;
+}
+
+.section2 {
+    border-bottom:  1px solid var(--color1);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.section2:last-child {
+    border: none;
+}
+
+.section2 h3 {
+    color: var(--color3);
+}
+
+.section2 p, p span i {
+    color: var(--color2);
+}
+
+.section2 p:last-of-type {
+    color: black;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+
+/* Footer section of the page */
+
+.foot {
+    width: 100%;
+    color: white;
+    background-color: var(--color2);
+    text-align: center;
+    padding: 8px;
+    line-height: 8px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials p {
+    margin-right: 5px;
+}
+
+.foot p, .socials p {
+    font-size: 0.93rem;
+}
+
+.foot p a {
+    color: white;
+}
+
+/* Responsiveness */
+
+@media screen and (min-width : 768px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+
+    .container1 {
+        max-width: 35%;
+        width: 32%;
+        height: fit-content;
+        max-height: auto;
+        
+        
+    }
+
+    .wrap {
+        max-width: 100%;
+        width: 67%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .container2 {
+        margin-top: 0;
+    }
+}
